@@ -67,12 +67,12 @@ function createServer(options, context) {
         res.sendFile(resolve(context.workspaceRoot, 'dist/rulenode-core-config/bundles/rulenode-core-config.umd.js.map'));
       }); */
     server = http.createServer(app);
-    const host = 'localhost';
+    const host = '0.0.0.0';
     server.on('error', (error) => {
         context.logger.error(error.message);
     });
     server.listen(options.port, host, 511, () => {
-        context.logger.info(`==> 🌎  Listening on port ${options.port}. Open up http://localhost:${options.port}/ in your browser.`);
+        context.logger.info(`==> 🌎  Listening on port ${options.port}. Open up http://0.0.0.0:${options.port}/ in your browser.`);
     });
 }
 exports.createServer = createServer;

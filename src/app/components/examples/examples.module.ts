@@ -31,6 +31,7 @@ import { ExampleChartComponent } from './example-chart/example-chart.component';
 import {
   ExampleChartSettingsComponent
 } from './example-chart/chart-settings/example-chart-settings.component';
+import { SwitchComponent } from './example-switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {
     ExampleTableCustomSubscriptionComponent,
     ExampleOfUsingThirdPartyLibraryComponent,
     ExampleChartComponent,
-    ExampleChartSettingsComponent
+    ExampleChartSettingsComponent,
+    SwitchComponent
   ],
   imports: [
     CommonModule,
@@ -63,7 +65,8 @@ import {
     ExampleTableCustomSubscriptionComponent,
     ExampleOfUsingThirdPartyLibraryComponent,
     ExampleChartComponent,
-    ExampleChartSettingsComponent
+    ExampleChartSettingsComponent,
+    SwitchComponent
   ]
 })
 

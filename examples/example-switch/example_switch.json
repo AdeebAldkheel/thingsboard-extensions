@@ -1,0 +1,30 @@
+{
+  "fqn": "example_switch",
+  "name": "Example switch",
+  "deprecated": false,
+  "image": null,
+  "description": null,
+  "descriptor": {
+    "type": "latest",
+    "sizeX": 3,
+    "sizeY": 3,
+    "resources": [
+      {
+        "url": "http://0.0.0.0:5000/static/widgets/thingsboard-extension-widgets.js",
+        "isModule": true
+      }
+    ],
+    "templateHtml": "<tb-switch2 [ctx]='ctx'></tb-switch2>",
+    "templateCss": "",
+    "controllerScript": "self.onInit = function() {}\nself.onDataUpdated = function() {}\nself.typeParameters = function() { return { maxDatasources: 0, embedTitlePanel: true }; }",
+    "settingsSchema": "{}",
+    "dataKeySettingsSchema": "{}",
+    "latestDataKeySettingsSchema": "{}",
+    "settingsDirective": "",
+    "dataKeySettingsDirective": "",
+    "latestDataKeySettingsDirective": "",
+    "hasBasicMode": false,
+    "basicModeDirective": "",
+    "defaultConfig": ""
+  }
+}
