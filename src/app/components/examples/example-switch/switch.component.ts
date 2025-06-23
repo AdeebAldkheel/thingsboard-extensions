@@ -15,15 +15,17 @@
 ///
 
 import { AfterViewInit, Component, ElementRef, Input, OnDestroy, ViewChild } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '@shared/public-api';
 import { WidgetContext } from '@home/models/widget-component.models';
-import { UtilsService } from '@core/services/utils.service';
+import { UtilsService } from '@core/public-api';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { isDefined } from '@core/utils';
-import { IWidgetSubscription, SubscriptionInfo, WidgetSubscriptionOptions } from '@core/api/widget-api.models';
-import { DatasourceType, widgetType } from '@shared/models/widget.models';
-import { EntityType } from '@shared/models/entity-type.models';
+//import { AppState } from '@core/core.state';
+//import { isDefined } from '@core/utils';
+//import { IWidgetSubscription, SubscriptionInfo, WidgetSubscriptionOptions } from '@core/api/widget-api.models';
+//import { DatasourceType, widgetType } from '@shared/models/widget.models';
+//import { EntityType } from '@shared/models/entity-type.models';
+import { AppState, isDefined, IWidgetSubscription, SubscriptionInfo, WidgetSubscriptionOptions } from '@core/public-api';
+import { DatasourceType, widgetType, EntityType } from '@shared/public-api';
 import { ThemePalette } from '@angular/material/core';
 
 const switchAspectRation = 2.7893;
